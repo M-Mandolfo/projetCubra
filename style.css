@@ -1,0 +1,269 @@
+header{
+    background-color: #996699;
+    margin: 0;
+    padding: 0;
+    height: 450px;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+} 
+
+
+/* Menu */
+li{
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.menu{
+    background-color: rgb(94, 33, 151);
+    height: 30px;
+}
+
+.menu:hover{
+    background-color: rgb(94, 33, 151);
+}
+/* Fin menu */
+
+/* Header elements */
+h2, h4{
+    color: white;
+    text-align: center;
+    font-family: 'TitilliumWeb-Bold';
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(214, 84, 36);
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+/* Fin header elements */
+
+/* Services */
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'TitilliumWeb-Bold';
+    font-size: 30px;
+}
+
+.services{
+    background-color: #00cc99;
+    display: grid;
+}
+
+hr{
+    width: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 220px 130px 220px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  p{
+      text-align: center;
+      color: white;
+  }
+
+/* Fin Services */
+
+/* Team */
+.team{
+    background-color: #ccffff;
+    display: grid;
+}
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 220px 140px 220px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container1 > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  hr{
+    width: 100px;
+}
+
+.para1, .serv, .title{
+      text-align: center;
+      color: rgb(65, 64, 64);
+  }
+
+  .job{
+      color: #33ccff;
+  }
+  /* Fin Team */
+
+  /* Skills */
+
+  .skills{
+    background-color: #ffff;
+    display: grid;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 220px 220px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container2 > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  hr{
+    width: 100px;
+}
+
+.para1, .serv, .title{
+      text-align: center;
+      color: rgb(65, 64, 64);
+  }
+/* Fin Skills */
+
+/* Testimonials */
+.testimonials{
+    background-color: #cc3399;
+    display: grid;
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container3 > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+
+  hr{
+    width: 100px;
+}
+
+.para2, .serv1, .title1{
+      text-align: center;
+      color: rgb(255, 255, 255);
+  }
+
+.para3{
+    color: #ffcc99;
+}
+
+  /* Fin testimonials */
+
+  /* contact */
+
+.contact{
+    background-color: #336699;
+    display: grid;
+}
+
+textarea, input{
+    background-color: #333366;
+    color: white;
+}
+
+#submit_button{
+    background-color: #33ccff;
+    height: 40px;
+    width: 150px;
+}
+
+
+.grid-container6 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 220px 220px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container6 > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+
+/* fin contact */
+
+/* footer */
+
+footer{
+    background-color: #333399;
+    display: grid;
+}
+
+.grid-container5 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+  }
+  
+  .grid-container5 > div {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+
+ .icon{
+    text-align: center;
+    color: rgb(255, 255, 255); 
+ } 
+
+ .icon1{
+     color: #33ccff;
+     text-align: center;
+ }
+/* fin footer */
