@@ -43,7 +43,7 @@ a{
     font-family: 'Titillium Web', sans-serif;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 780px){
     #menuToggle{
   display: block;
   position: relative;
@@ -80,7 +80,6 @@ a{
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
-  position: relative;
   
   background: #cdcdcd;
   border-radius: 3px;
@@ -122,9 +121,8 @@ a{
     /*Make this absolute positioned at the top left of the screen*/
     #menu{
   position: absolute;
-  margin: -60px 0 0 -120px;
-  padding: 50px;
-  padding-top: 125px;
+  padding: 5px;
+  padding-top: 20px;
   display:flex;
   flex-direction: column;
   background-color:#643a79; 
@@ -223,19 +221,23 @@ h1{
     display: grid;
 }
 
-hr{
+.hr1{
   width: 100px;
+  height: 3px;
+  border: #009999;
+  background-color: #009999;
 }
+
+
 
 .grid-container {
     display: grid;
-    max-width: 1800px;
-    margin-left: 40px;
+    max-width: 1140px;
+    margin: auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 220px 140px;
-    grid-gap: 5px;
+    grid-template-rows: 220px 160px;
+    grid-gap: 40px;
     grid-auto-rows: minmax(15px, auto);
-    padding: 10px;
   }
   
   .grid-container > div {
@@ -255,7 +257,6 @@ hr{
   .grid-container {
      grid-template-columns: repeat(2, 1fr);
      grid-template-rows: repeat(1, 1fr);
-     margin: 0px;
       }
   }
 
@@ -264,7 +265,6 @@ hr{
 .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0px;
     }
 }
 
@@ -277,12 +277,12 @@ hr{
 }
 .grid-container1 {
   display: grid;
-  max-width: 1800px;
+  max-width: 1140px;
+  margin: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 220px 250px;
-  grid-gap: 1px;
+  grid-gap: 40px;
   grid-auto-rows: minmax(15px, auto);
-  padding: 20px;
   }
   
 .grid-container1 > div {
@@ -291,23 +291,25 @@ hr{
     font-size: 16px;
 }
 
-hr{
-    width: 100px;
-}
-
-.para1, .serv, .title{
-      text-align: center;
-      color: rgb(65, 64, 64);
-      font-family: 'Titillium Web', sans-serif;
-      padding: 10px;
+.para5{
+  padding: 10px;
+  max-width: 650px;
+  margin: auto;
 }
 
 .job{
-      color: #33ccff;
-      font-family: 'Titillium Web', sans-serif;
-      font-size: 16px;
-      padding: 0%;
-      margin: 0%;
+  color: #33ccff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  padding: 0%;
+  margin: 0%;
+}
+
+.hr2{
+  width: 100px;
+  height: 3px;
+  border: #9bb0c9;
+  background-color: #9bb0c9;
 }
 
 @media only screen and (max-width: 900px) {
@@ -315,7 +317,6 @@ hr{
   .grid-container1 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0px;
   }
 } 
       
@@ -324,7 +325,6 @@ hr{
   .grid-container1 {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0px;
   }
 }
   /* Fin Team */
@@ -337,12 +337,13 @@ hr{
 
 .grid-container2 {
   display: grid;
-  max-width: 1800px;
+  max-width: 1140px;
+  margin: auto;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 220px 60px;
-  grid-gap: 1px;
+  grid-template-rows: 220px 5px;
+  grid-gap: 100px;
   grid-auto-rows: minmax(15px, auto);
-  padding: 20px;
+  padding-top: 15px;
   }
   
   .grid-container2 > div {
@@ -351,22 +352,25 @@ hr{
     font-size: 16px;
   }
 
-  hr{
-    width: 100px;
+.para1, .para4, .serv, .title{
+    text-align: center;
+    color: rgb(65, 64, 64);
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.para1, .serv, .title{
-      text-align: center;
-      color: rgb(65, 64, 64);
-      font-family: 'Titillium Web', sans-serif;
-  }
+.hr3{
+  width: 100px;
+  height: 3px;
+  border: #cccccc;
+  background-color: #cccccc;
+}
+
 
 @media only screen and (max-width: 900px) {
  
   .grid-container2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0px;
   }
 } 
 
@@ -375,7 +379,6 @@ hr{
   .grid-container2 {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0px;
   }
 }
 /* Fin Skills */
@@ -392,26 +395,26 @@ hr{
 
 .grid-container3 {
   display: grid;
-  max-width: 1800px;
+  max-width: 1140px;
+  margin: auto;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 100px;
-  grid-gap: 10px;
+  grid-template-rows: 200px 60px;
+  grid-gap: 15px;
+  padding: 15px 0;
+  grid-auto-rows: minmax(15px, auto);
   }
   
   .grid-container3 > div {
     text-align: center;
+    padding: 10px 0;
     font-size: 16px;
   }
 
-  hr{
-    width: 100px;
-}
-
-
-.para2, .serv1, .title1{
+.title1{
       text-align: center;
       color: rgb(255, 255, 255);
       font-family: 'Titillium Web', sans-serif;
+      padding: 5px;
   }
 
 .para3{
@@ -429,6 +432,14 @@ hr{
 .paraI{
     font-style: italic;
 }
+
+.hr4{
+  width: 100px;
+  height: 3px;
+  border: #b92a5a;
+  background-color: #b92859;
+}
+
 
 @media only screen and (max-width: 900px) {
  
@@ -486,12 +497,20 @@ input{
     width: 150px;
 }
 
+.hr5{
+  width: 100px;
+  height: 3px;
+  border: #333366;
+  background-color: #333366;
+}
+
 .grid-container6 {
     display: grid;
-    max-width: 1800px;
+    max-width: 1140px;
+    margin: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px 300px;
-    grid-gap: 1px;
+    grid-gap: 10px;
     grid-auto-rows: minmax(15px, auto);
     padding: 20px;
   }
@@ -511,7 +530,6 @@ input{
   .grid-container6 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0px;
       }
   }
 
@@ -520,7 +538,6 @@ input{
   .grid-container6 {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0px;
   }
     
   textarea, input{
