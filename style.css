@@ -5,12 +5,6 @@ header{
     height: 450px;
 }
 
-@media only screen and (max-width: 450px){
-    header{
-      height: 550px;
-    }
-}
-
 body {
     margin: auto;
     max-width: 100%;
@@ -128,7 +122,7 @@ a{
     /*Make this absolute positioned at the top left of the screen*/
     #menu{
   position: absolute;
-  margin: -100px 0 0 -120px;
+  margin: -60px 0 0 -120px;
   padding: 50px;
   padding-top: 125px;
   display:flex;
@@ -182,9 +176,22 @@ h2, h4{
   margin: 15px;
 }
 
+@media only screen and (max-width: 900px) {
+  .accroche{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .accroche{
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
 button{
     height: 50px;
-    width: 200px;
+    width: 150px;
     background-color: rgb(214, 84, 36);
     border-radius: 5px;
     border-style: none;
@@ -222,11 +229,11 @@ hr{
 
 .grid-container {
     display: grid;
-    max-width: 1240px;
-    margin-left: 300px;
+    max-width: 1800px;
+    margin-left: 40px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 220px 140px;
-    grid-gap: 1px;
+    grid-gap: 5px;
     grid-auto-rows: minmax(15px, auto);
     padding: 10px;
   }
@@ -270,8 +277,7 @@ hr{
 }
 .grid-container1 {
   display: grid;
-  max-width: 1240px;
-  margin-left: 300px;
+  max-width: 1800px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 220px 250px;
   grid-gap: 1px;
@@ -331,8 +337,7 @@ hr{
 
 .grid-container2 {
   display: grid;
-  max-width: 1240px;
-  margin-left: 300px;
+  max-width: 1800px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 220px 60px;
   grid-gap: 1px;
@@ -387,11 +392,10 @@ hr{
 
 .grid-container3 {
   display: grid;
-  max-width: 1440px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 200px 0px;
+  max-width: 1800px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 100px;
   grid-gap: 10px;
-  margin: 15px;
   }
   
   .grid-container3 > div {
@@ -429,7 +433,7 @@ hr{
 @media only screen and (max-width: 900px) {
  
   .grid-container3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 }
@@ -484,9 +488,8 @@ input{
 
 .grid-container6 {
     display: grid;
-    margin-left: 300px;
-    max-width: 1240px;
-    grid-template-columns: repeat(1, 1fr);
+    max-width: 1800px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px 300px;
     grid-gap: 1px;
     grid-auto-rows: minmax(15px, auto);
@@ -506,7 +509,7 @@ input{
 @media only screen and (max-width: 900px) {
  
   .grid-container6 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     margin: 0px;
       }
