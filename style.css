@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 
-
 header{
     background-color: #996699;
     height: 450px;
+}
+
+@media only screen and (max-width: 450px){
+    header{
+      height: 550px;
+    }
 }
 
 body {
     margin: auto;
     max-width: 100%;
 } 
-
 
 /* Menu */
 .nav{
@@ -23,6 +27,7 @@ body {
 .navBar{
     display: inline;
 }
+
 
 .navBar ul li {
     display: inline;
@@ -44,7 +49,7 @@ a{
     font-family: 'Titillium Web', sans-serif;
 }
 
-@media screen and (max-width: 450px){
+@media only screen and (max-width: 500px){
     #menuToggle{
   display: block;
   position: relative;
@@ -76,7 +81,7 @@ a{
     }
 
     /*Just a quick hamburger */
-    #menuToggle span{
+  #menuToggle span{
   display: block;
   width: 33px;
   height: 4px;
@@ -103,23 +108,20 @@ a{
     }
 
     /* Transform all the slices of hamburger into a crossmark.*/
-    #menuToggle input:checked ~ span
-    {
+    #menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
     }
 
     /*But let's hide the middle one.*/
-    #menuToggle input:checked ~ span:nth-last-child(3)
-    {
+    #menuToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
     }
 
     /*Ohyeah and the last one should go the other direction*/
-    #menuToggle input:checked ~ span:nth-last-child(2)
-    {
+    #menuToggle input:checked ~ span:nth-last-child(2){
   transform: rotate(-45deg) translate(0, -1px);
     }
 
@@ -153,6 +155,17 @@ a{
     }   
 }
 
+.checkbox{
+  opacity: 0;
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
 /* Fin menu */
 
 /* Header elements */
@@ -160,6 +173,13 @@ h2, h4{
     color: white;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.accroche{
+  font-size: 22px;
+  margin: 15px;
 }
 
 button{
@@ -168,6 +188,7 @@ button{
     background-color: rgb(214, 84, 36);
     border-radius: 5px;
     border-style: none;
+    
 }
 
 button a{
@@ -178,11 +199,11 @@ button a{
 .btn{
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 /* Fin header elements */
 
 /* Services */
-
 h1{
     color: white;
     text-align: center;
@@ -201,10 +222,13 @@ hr{
 
 .grid-container {
     display: grid;
+    max-width: 1240px;
+    margin-left: 300px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 220px 130px 220px;
+    grid-template-rows: 220px 140px;
     grid-gap: 1px;
-    grid-auto-rows: minmax(25px, auto);
+    grid-auto-rows: minmax(15px, auto);
+    padding: 10px;
   }
   
   .grid-container > div {
@@ -217,17 +241,26 @@ hr{
       text-align: center;
       color: white;
       font-family: 'Titillium Web', sans-serif;
-      padding: 10px;
   }
 
+@media only screen and (max-width: 900px) {
+ 
+  .grid-container {
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(1, 1fr);
+     margin: 0px;
+      }
+  }
 
 @media only screen and (max-width: 450px) {
  
 .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    margin: 0px;
     }
 }
+
 /* Fin Services */
 
 /* Team */
@@ -236,20 +269,23 @@ hr{
     display: grid;
 }
 .grid-container1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 220px 140px 220px;
-    grid-gap: 1px;
-    grid-auto-rows: minmax(25px, auto);
+  display: grid;
+  max-width: 1240px;
+  margin-left: 300px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 220px 250px;
+  grid-gap: 1px;
+  grid-auto-rows: minmax(15px, auto);
+  padding: 20px;
   }
   
-  .grid-container1 > div {
+.grid-container1 > div {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0; 
     font-size: 16px;
-  }
+}
 
-  hr{
+hr{
     width: 100px;
 }
 
@@ -258,21 +294,33 @@ hr{
       color: rgb(65, 64, 64);
       font-family: 'Titillium Web', sans-serif;
       padding: 10px;
-  }
+}
 
-  .job{
+.job{
       color: #33ccff;
       font-family: 'Titillium Web', sans-serif;
       font-size: 16px;
-  }
+      padding: 0%;
+      margin: 0%;
+}
 
-  @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 900px) {
  
-    .grid-container1 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        }
-    }
+  .grid-container1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0px;
+  }
+} 
+      
+@media only screen and (max-width: 450px) {
+ 
+  .grid-container1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0px;
+  }
+}
   /* Fin Team */
 
   /* Skills */
@@ -282,11 +330,14 @@ hr{
 }
 
 .grid-container2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 220px 220px;
-    grid-gap: 1px;
-    grid-auto-rows: minmax(25px, auto);
+  display: grid;
+  max-width: 1240px;
+  margin-left: 300px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 220px 60px;
+  grid-gap: 1px;
+  grid-auto-rows: minmax(15px, auto);
+  padding: 20px;
   }
   
   .grid-container2 > div {
@@ -305,38 +356,53 @@ hr{
       font-family: 'Titillium Web', sans-serif;
   }
 
-
-  @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 900px) {
  
-    .grid-container2 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        }
-    }
+  .grid-container2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0px;
+  }
+} 
+
+@media only screen and (max-width: 450px) {
+ 
+  .grid-container2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0px;
+  }
+}
 /* Fin Skills */
 
+.services, .team, .skills, .testimonials, .contact, footer, header{
+  padding: 25px;
+}
+ 
 /* Testimonials */
 .testimonials{
     background-color: #cc3399;
     display: grid;
 }
+
 .grid-container3 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 200px 200px;
-    grid-gap: 1px;
-    grid-auto-rows: minmax(25px, auto);
+  display: grid;
+  max-width: 1440px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px 0px;
+  grid-gap: 10px;
+  margin: 15px;
   }
   
   .grid-container3 > div {
     text-align: center;
-    padding: 10px 0;
     font-size: 16px;
   }
 
   hr{
     width: 100px;
 }
+
 
 .para2, .serv1, .title1{
       text-align: center;
@@ -347,10 +413,25 @@ hr{
 .para3{
     color: #ffcc99;
     font-family: 'Titillium Web', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.para2{
+  padding: 0%;
+  margin: 0%;
 }
 
 .paraI{
     font-style: italic;
+}
+
+@media only screen and (max-width: 900px) {
+ 
+  .grid-container3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -361,9 +442,22 @@ hr{
         }
     }
 
-  /* Fin testimonials */
+@media only screen and (max-width: 900px) {
+ 
+  .contain {
+     width: 100%;
+      }
+}
 
-  /* contact */
+@media only screen and (max-width: 450px) {
+ 
+  .contain {
+    width: 100%;
+   }
+}
+/* Fin testimonials */
+
+/* contact */
 .contact{
     background-color: #336699;
     display: grid;
@@ -390,10 +484,13 @@ input{
 
 .grid-container6 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 200px 150px;
+    margin-left: 300px;
+    max-width: 1240px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 30px 300px;
     grid-gap: 1px;
-    grid-auto-rows: minmax(25px, auto);
+    grid-auto-rows: minmax(15px, auto);
+    padding: 20px;
   }
   
   .grid-container6 > div {
@@ -402,18 +499,32 @@ input{
     font-size: 16px;
   }
 
-
-  @media only screen and (max-width: 450px) {
- 
-    .grid-container6 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        }
-    
-        textarea, input{
-        max-width: 250px;
-    }
+.row{
+  padding: 5px;
 }
+
+@media only screen and (max-width: 900px) {
+ 
+  .grid-container6 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0px;
+      }
+  }
+
+@media only screen and (max-width: 450px) {
+ 
+  .grid-container6 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0px;
+  }
+    
+  textarea, input{
+    max-width: 200px;
+  }
+}
+
 /* fin contact */
 
 /* footer */
@@ -425,9 +536,9 @@ footer{
 .grid-container5 {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 50px;
+    grid-template-rows: 40px;
     grid-gap: 1px;
-    grid-auto-rows: minmax(25px, auto);
+    grid-auto-rows: minmax(15px, auto);
   }
   
   .grid-container5 > div {
@@ -448,12 +559,23 @@ footer{
      font-family: 'Titillium Web', sans-serif;
  }
 
- @media only screen and (max-width: 450px) {
+ @media only screen and (max-width: 900px) {
  
-    .grid-container5 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        }
-    }
+  .grid-container5 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+ 
+  .grid-container5 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
 /* fin footer */
+
+
+
 
